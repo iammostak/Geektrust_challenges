@@ -1,0 +1,30 @@
+.navbar {
+   display: flex;
+   background: rgb(224, 224, 224);
+   align-items: center;
+   justify-content: space-between;
+   padding: 0.4rem 3rem;
+}
+
+.navLink {
+   font-weight: 600;
+   text-decoration: none;
+   color: black;
+}
+
+.navLink:hover{
+   text-decoration: underline;
+}
+
+.navbar > div {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+
+.navbar > div > div {
+   padding: 0.4rem 1rem;
+   cursor: pointer;
+   background: rgb(196, 196, 196);
+   border-radius: 4px;
+}

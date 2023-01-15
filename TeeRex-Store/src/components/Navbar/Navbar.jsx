@@ -10,11 +10,12 @@ function Navbar() {
          </NavLink>
          <div>
             <NavLink className={styles.navLink} to="/">
-               <p>Products</p>
+               <p className={styles.productNav}>Products</p>
             </NavLink>
-            <div>
+            <div className={styles.cart}>
                <NavLink className={styles.navLink} to="/cart">
                   <BsCart3 size={24} />
+                  <span>0</span>
                </NavLink>
             </div>
          </div>

@@ -4,6 +4,9 @@
    align-items: center;
    justify-content: space-between;
    padding: 0.4rem 3rem;
+   position: sticky;
+   top: 0;
+   z-index: 27;
 }
 
 .navLink {
@@ -12,7 +15,7 @@
    color: black;
 }
 
-.navLink:hover{
+.navLink:hover {
    text-decoration: underline;
 }
 
@@ -22,9 +25,30 @@
    gap: 2rem;
 }
 
-.navbar > div > div {
+.cart {
    padding: 0.4rem 1rem;
    cursor: pointer;
    background: rgb(196, 196, 196);
    border-radius: 4px;
+   position: relative;
+}
+
+.cart span {
+   position: absolute;
+   top: 0;
+   right: 1;
+   font-size: 14px;
+}
+
+@media screen {
+}
+
+@media all and (min-width: 260px) and (max-width: 767px) {
+   .navbar {
+      padding: 0.3rem 1.4rem;
+   }
+
+   .productNav {
+      display: none;
+   }
 }
